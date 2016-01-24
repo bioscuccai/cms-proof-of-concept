@@ -1,0 +1,16 @@
+<md-list>
+  <md-list-item class="md-3-line" ng-repeat="tweet in tweets">
+    <img src="/static/assets/images/media-flash.png" style="height: 50px">
+    <div class="md-list-item-text">
+      <h3>{{tweet.user.name}}</h3>
+      <p>
+        <i class="icon ion-calendar"></i>
+        {{tweet.updatedAt}}
+      </p>
+      <p>
+        <i class="icon ion-social-nodejs"></i>
+        {{tweet.text}}
+      </p>
+    </div>
+  </md-list-item>
+</md-list>

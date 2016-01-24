@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/static/bower/angular-material/angular-material.css">
+  </head>
+  <body ng-app='app'>
+    <div>
+      <section layout="flow" flex>
+        <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-is-open="true" md-is-locked-open="true">
+          <md-toolbar>
+            <div class="md-toolbar-tools">
+              <span>
+                Tweets
+              </span>
+            </div>
+          </md-toolbar>
+          <div ui-view="tweets"></div>
+          
+        </md-sidenav>
+        <md-content layout-padding flex>
+          <div ui-view="main"></div>
+        </md-content>
+      </section>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/static/bower/lodash/lodash.js"></script>
+    <script src="/static/bower/angular/angular.js"></script>
+    <script src="/static/bower/angular-aria/angular-aria.js"></script>
+    <script src="/static/bower/angular-animate/angular-animate.js"></script>
+    <script src="/static/bower/angular-material/angular-material.js"></script>
+    <script src="/static/bower/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src='/static/bower/angular-socket-io/socket.js'></script>
+    
+    <script src="/static/js/app.js"></script>
+    <script src="/static/js/services.js"></script>
+    <script src="/static/js/controllers/menu.js"></script>
+    <script src="/static/js/controllers/home.js"></script>
+    <script src="/static/js/controllers/tweet.js"></script>
+    
+  </body>
+</html>

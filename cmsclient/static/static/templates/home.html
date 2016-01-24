@@ -1,0 +1,17 @@
+<ul>
+  <li ng-repeat="post in posts">
+    <p>
+      <h5>
+        <a ui-sref="post/{{post._id}}">
+          {{post.title}}
+        </a>
+      </h5>
+    </p>
+    <p ng-show="post.fileName">
+      <img ng-src="/uploads/{{post.remoteId}}/{{post.fileName}}">
+    </p>
+    <p>
+      {{post.intro}}
+    </p>
+  </li>
+</ul>

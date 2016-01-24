@@ -1,0 +1,14 @@
+extends ../layout.jade
+block main
+  p
+    |Title:
+    =post.title
+  p
+    |Intro:
+    =post.intro
+  p
+    |text:
+    =post.text
+  p
+    |tags:
+    =post.tags.join(", ")

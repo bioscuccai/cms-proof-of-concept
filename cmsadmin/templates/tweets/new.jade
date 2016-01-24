@@ -1,0 +1,9 @@
+extends ../layout.jade
+block main
+  form(action='/tweets/new' method='post')
+    p
+      textarea(name="text")
+    p
+      input(type="text" name="tags")
+    p
+      input(type='submit' value='New tweet')

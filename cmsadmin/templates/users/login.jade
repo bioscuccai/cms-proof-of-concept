@@ -1,0 +1,11 @@
+extends ../layout.jade
+block main
+  form(action='/users/login' method='post')
+    p
+      |email:
+      input(type="text" name="email")
+    p
+      |password:
+      input(type="password" name="password")
+    p
+      input(type='submit' value='Login')

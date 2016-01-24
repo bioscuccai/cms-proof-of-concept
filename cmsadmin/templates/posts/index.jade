@@ -1,0 +1,11 @@
+extends ../layout.jade
+block main
+  div
+    a(href="/posts/new")
+      |New
+  div
+    ul
+      each post in posts
+        li
+          a(href="/posts/"+post.id)
+            =post.title

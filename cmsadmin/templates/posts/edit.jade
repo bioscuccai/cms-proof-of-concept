@@ -1,0 +1,26 @@
+extends ../layout.jade
+block main
+  form(action='/posts/'+post.id+'/edit' method='post')
+    p
+      |Title:
+      input(type="text" name="title" value=post.title)
+    p
+      |Intro:
+      textarea(name="intro")
+        =post.intro
+    p
+      |Text:
+      textarea(name="text")
+        =post.text
+    p
+      |Tags:
+      input#tags(type="text" name="tags" value=post.tags+",")
+    p
+      |Available tags:
+      each tag in tags
+        a.tag-link(href="")
+          =tag
+        |&nbsp;
+    p
+      input(type='submit' value='Edit post')
+    

@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title
+      |CMS admin
+    script(src="/static/bower/jquery/dist/jquery.min.js" type="text/javascript")
+  body
+    div(style="text-align: right")
+      if user
+        =user.name
+        | |
+        a(href="/users/logout")
+          |logout
+      else
+        a(href="/users/login")
+          |login
+    div
+      a(href="/posts")
+        |Posts
+      | | 
+      a(href="/tweets")
+        |Tweets
+      | | 
+      a(href="/users")
+        |Users
+    block main
+    block js

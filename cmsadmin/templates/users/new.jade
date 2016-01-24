@@ -1,0 +1,14 @@
+extends ../layout.jade
+block main
+  form(action='/users/new' method='post')
+    p
+      |name:
+      input(type="text" name="name")
+    p
+      |email:
+      input(type="text" name="email")
+    p
+      |password:
+      input(type="password" name="password")
+    p
+      input(type='submit' value='New user')

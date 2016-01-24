@@ -1,0 +1,13 @@
+extends ../layout.jade
+block main
+  div
+    a(href="/tweets/new")
+      |New
+  div
+    ul
+      each tweet in tweets
+        li
+          strong
+            =tweet.user.name
+          |: 
+          =tweet.text

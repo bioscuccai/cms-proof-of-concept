@@ -1,0 +1,16 @@
+{
+  "name": "cmsadmin",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "dsadsa"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

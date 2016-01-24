@@ -1,0 +1,11 @@
+extends ../layout.jade
+block main
+  div
+    a(href="/users/new")
+      |New
+  div
+    ul
+      each user in users
+        li
+          a(href="/users/"+user.id)
+            =user.name
